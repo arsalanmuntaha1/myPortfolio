@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Portfolio</title>
+        <link
+            rel="stylesheet"
+            href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+        />
+
+        <link rel="stylesheet" href="style.css" />
+        <script
+            src="https://unpkg.com/@dotlottie/player-component@latest/dist/dotlottie-player.mjs"
+            type="module"
+        ></script>
+    </head>
+
+    <body>
+        <!-- ------------------------HOME SECTION------------------------ -->
+
+        <header>
+            <div class="inner">
+                <div class="logo border" id="logo">
+                    <img src="./img/logo.png" alt="Logo" />
+                </div>
+                <div class="menus border">
+                    <ul>
+                        <li><a href="default.asp">HOME</a></li>
+                        <li><a href="news.asp">ABOUT</a></li>
+                        <li><a href="contact.asp">CONTACT</a></li>
+                        <li><a href="about.asp">WORKS</a></li>
+                    </ul>
+                </div>
+                <div class="button">
+                    <button>HIRE ME <i class="fa-light fa-paper-plane"></i></button>
+                </div>
+            </div>
+        </header>
+
+        <!-- -----------------------------HERO SECTION------------------- -->
+
+        <section class="Hero-section">
+            <div class="inner">
+                <div class="left" id="left">
+                    <!-- <h3 class="sub heading">MUNTAHA ARSALAN</h3> -->
+                    <h3 class="subheading">Salam,I'm</h3>
+                    <h1 class="mainheading">MUNTAHA ARSALAN</h1>
+                    <h3 class="subheading">I'm a Web Developer.</h3>
+                    <p>
+                        I transform ideas into digital realities, focusing unique and engaging
+                        experiences for users.
+                    </p>
+
+                    <span class="button">
+                        <button class="button-primary">
+                            CONTACT ME <i class="fa fa-phone" aria-hidden="true"></i>
+                        </button>
+                        <button class="button-outline-primary">
+                            DOWNLOAD CV<i class="fa fa-download" aria-hidden="true"></i>
+                        </button>
+                    </span>
+                </div>
+
+                <div class="hero-image" id="right">
+                    <img src="./img/img2.png" alt="Portfolio image" />
+                </div>
+            </div>
+        </section>
+
+        <!-- ------------------------ABOUT SECTION----------------------- -->
+
+        <section class="About-section">
+            <div class="about-left">
+                <script
+                    src="https://unpkg.com/@dotlottie/player-component@latest/dist/dotlottie-player.mjs"
+                    type="module"
+                ></script>
+
+                <dotlottie-player
+                    src="https://lottie.host/f107a9db-b2ca-404c-a11c-67b486f6e7db/Mz7dJ2ZjKq.json"
+                    background="transparent"
+                    speed="1"
+                    style="width: 500px; height: 500px"
+                    loop
+                    autoplay
+                ></dotlottie-player>
+            </div>
+            <div class="about-right">
+                <h1 class="about-heading">
+                    <dotlottie-player
+                        src="https://lottie.host/1cd8eeda-7800-48fe-badc-4ab0a21dde39/GKNV0ixr2Y.json"
+                        background="transparent"
+                        speed="1"
+                        style="width: 300px; height: 100px"
+                        loop
+                        autoplay
+                    ></dotlottie-player>
+                </h1>
+                <p>As a passionate developer, I've honed my skills in TypeScript, JavaScript, HTML, and CSS, building a solid foundation in front-end development. With hands-on experience in projects ranging from a CLI to a product catalog, I've transformed concepts into functional, user-friendly applications. My journey doesn't stop here—I'm eager to dive into the world of React and Next.js, where I can blend my creativity with cutting-edge technology to build dynamic, responsive web experiences. I'm excited to continue pushing the boundaries of what's possible in web development and to contribute to innovative projects that make a difference.</p>
+            </div>
+        </section>
+    </body>
+</html>

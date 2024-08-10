@@ -1,0 +1,111 @@
+/* -------------ABRI FATFACE FONT-------------------- */
+
+@import url('https://fonts.googleapis.com/css2?family=Abril+Fatface&display=swap');
+
+/* -------------POPPIN FONT-------------------- */
+
+@import url('https://fonts.googleapis.com/css?family=Poppins');
+* {
+    font-family: sans-serif;
+}
+header > .inner {
+    display: flex;
+    justify-content: space-between;
+}
+ul {
+    display: flex;
+    padding: 5px;
+    list-style: none;
+}
+ul > li > a {
+    text-decoration: none;
+    color: black;
+    font-weight: 50;
+}
+li {
+    padding: 10px 15px;
+    margin: 0px 20px;
+    border-radius: 15px;
+    font-weight: 500;
+}
+button {
+    font-size: x-small;
+    background-color: #5d3bef;
+    padding: 8px 20px;
+    font-size: 18px;
+    border: 0px;
+    opacity: 1;
+    border-radius: 20px;
+    margin: 15px 20px;
+    color: white;
+}
+button:hover {
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.5);
+    cursor: pointer;
+    transition: 0.2s;
+}
+#logo > img {
+    width: 80px;
+}
+section > .inner {
+    display: flex;
+    gap: 10px;
+    justify-content: space-between;
+    align-items: center;
+}
+.left {
+    /* margin-top: 60px; */
+    font-size: x-large;
+}
+.mainheading {
+    margin: 0px 40px;
+    color: #5d3bef;
+    font-style: italic;
+    font-weight: 900;
+}
+.button-outline-primary{
+    background-color: white;
+    color: #5d3bef;
+    ;
+}
+.button-primary {
+    margin: 0px 10px;
+}
+#right {
+    /* margin: 0px;
+    padding: 0px; */
+}
+#right > img {
+    width: 500px;
+    height: auto;
+}
+.inner {
+    padding: 0px 80px;
+}
+.about-left{
+    height: 800px;
+}
+.About-section{
+    display: flex;
+    justify-content: space-around;
+}
+.About-section> h1{
+        margin: 0px;
+}
+
+.About-section> about-right> p{
+    text-align: justify;
+    font-size: medium;
+    margin: 0px;
+}
+
+
+/* -------------HEADER-NAVIGATION BAR-------------------- */
+
+/* -------------HERO SECTION-------------------- */
+
+/* -------------HERO IMAGE SECTION-------------------- */
+
+/* -------------ANIMATION-------------------- */
+
+/* -------------RESPONSIVE DESIGN-------------------- */
