@@ -6,7 +6,7 @@
 
 @import url('https://fonts.googleapis.com/css?family=Poppins');
 * {
-    font-family: sans-serif;
+    font-family: "Poppins", sans-serif;
 }
 header > .inner {
     display: flex;
@@ -17,10 +17,19 @@ ul {
     padding: 5px;
     list-style: none;
 }
+i {
+    font-size: 17px;
+}
 ul > li > a {
     text-decoration: none;
     color: black;
     font-weight: 50;
+}
+ul > li > a::after:hover{
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: fit-content;
 }
 li {
     padding: 10px 15px;
@@ -63,10 +72,9 @@ section > .inner {
     font-style: italic;
     font-weight: 900;
 }
-.button-outline-primary{
-    background-color: white;
+.button-outline-primary {
+    background-color: rgb(255, 244, 244);
     color: #5d3bef;
-    ;
 }
 .button-primary {
     margin: 0px 10px;
@@ -82,23 +90,29 @@ section > .inner {
 .inner {
     padding: 0px 80px;
 }
-.about-left{
+.about-left {
     height: 800px;
 }
-.About-section{
+.About-section {
     display: flex;
     justify-content: space-around;
 }
-.About-section> h1{
-        margin: 0px;
+.About-section > h1 {
+    margin: 0px;
 }
 
-.About-section> about-right> p{
+.About-section > about-right > p {
     text-align: justify;
     font-size: medium;
     margin: 0px;
 }
-
+ul>.section-list{
+    text-decoration: underline;
+    color: #5d3bef;
+    font-size: larger;
+    text-decoration-color: black;
+    text-decoration-thickness: 2px;
+}
 
 /* -------------HEADER-NAVIGATION BAR-------------------- */
 
