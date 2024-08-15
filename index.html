@@ -26,25 +26,24 @@
                 </div>
                 <div class="menus border">
                     <ul>
-                        <li><a href="default.asp">HOME</a></li>
-                        <li><a href="news.asp">ABOUT</a></li>
+                        <li><a href="default.asp" class="active">HOME</a></li>
+                        <li><a href="#About-section">ABOUT</a></li>
+                        <li><a href="#project-section">WORKS</a></li>
                         <li><a href="contact.asp">CONTACT</a></li>
-                        <li><a href="about.asp">WORKS</a></li>
                     </ul>
                 </div>
                 <div class="button">
-                    <button>HIRE ME <i class="fa-light fa-paper-plane"></i></button>
+                    <button>HIRE ME <i class="fa fa-paper-plane"></i></button>
                 </div>
             </div>
         </header>
 
         <!-- -----------------------------HERO SECTION------------------- -->
-
         <section class="Hero-section">
             <div class="inner">
                 <div class="left" id="left">
                     <!-- <h3 class="sub heading">MUNTAHA ARSALAN</h3> -->
-                    <h3 class="subheading">Salam,I'm</h3>
+                    <h3 class="subheading">Salam, I'm</h3>
                     <h1 class="mainheading">MUNTAHA ARSALAN</h1>
                     <h3 class="subheading">I'm a Web Developer.</h3>
                     <p>
@@ -61,7 +60,6 @@
                         </button>
                     </span>
                 </div>
-
                 <div class="hero-image" id="right">
                     <img src="./img/img2.png" alt="Portfolio image" />
                 </div>
@@ -70,7 +68,7 @@
 
         <!-- ------------------------ABOUT SECTION----------------------- -->
 
-        <section class="About-section">
+        <section class="About" id="About-section">
             <div class="about-left">
                 <script
                     src="https://unpkg.com/@dotlottie/player-component@latest/dist/dotlottie-player.mjs"
@@ -97,13 +95,31 @@
                         autoplay
                     ></dotlottie-player>
                 </h1>
-                <p>As a passionate developer, I've honed my skills in TypeScript, JavaScript, HTML, and CSS, building a solid foundation in front-end development. With hands-on experience in projects ranging from a CLI to a product catalog, I've transformed concepts into functional, user-friendly applications. My journey doesn't stop here—I'm eager to dive into the world of React and Next.js, where I can blend my creativity with cutting-edge technology to build dynamic, responsive web experiences. I'm excited to continue pushing the boundaries of what's possible in web development and to contribute to innovative projects that make a difference.</p>
+                <p>
+                    As a passionate developer, I've honed my skills in TypeScript, JavaScript, HTML,
+                    and CSS, building a solid foundation in front-end development. With hands-on
+                    experience in projects ranging from a CLI to a product catalog, I've transformed
+                    concepts into functional, user-friendly applications. My journey doesn't stop
+                    here—I'm eager to dive into the world of React and Next.js, where I can blend my
+                    creativity with cutting-edge technology to build dynamic, responsive web
+                    experiences. I'm excited to continue pushing the boundaries of what's possible
+                    in web development and to contribute to innovative projects that make a
+                    difference.
+                </p>
                 <ul class="section-list">
-                    <li class="skills">Skills</li>
-                    <li class="experiences">Experience</li>
-                    <li class="education">Education</li>
+                    <li class="skills"><a href="skills">Skills</a></li>
+                    <li class="experiences"><a href="experiences">Experience</a></li>
+                    <li class="education"><a href="education">Education</a></li>
                 </ul>
             </div>
+        </section>
+        <!-- --------------------------------PROJECT SECTION----------------------------- -->
+        <section class="project" id="project-section">
+            <div></div>
+        </section>
+        <!------------------------------------------CONTACT SECTION---------------------------- -->
+        <section class="contact" id="contact-section">
+            <div></div>
         </section>
     </body>
 </html>

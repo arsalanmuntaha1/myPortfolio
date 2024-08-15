@@ -6,7 +6,9 @@
 
 @import url('https://fonts.googleapis.com/css?family=Poppins');
 * {
-    font-family: "Poppins", sans-serif;
+    font-family: 'Poppins', sans-serif;
+    margin: 0px;
+    padding: 0px;
 }
 header > .inner {
     display: flex;
@@ -24,12 +26,22 @@ ul > li > a {
     text-decoration: none;
     color: black;
     font-weight: 50;
+    position: relative;
 }
-ul > li > a::after:hover{
-    content: "";
+ul li a::after,
+ul .active ::after {
+    content: '';
     position: absolute;
+    background-color: #5d3bef;
+    width: 0%;
+    height: 0.2rem;
+    left: 0;
+    bottom: -5px;
+    transition: 0.5s;
+}
+ul li a:hover::after,
+ul .active::after {
     width: 100%;
-    height: fit-content;
 }
 li {
     padding: 10px 15px;
@@ -66,11 +78,15 @@ section > .inner {
     /* margin-top: 60px; */
     font-size: x-large;
 }
+.subheading {
+    font-size: 40px;
+}
 .mainheading {
     margin: 0px 40px;
     color: #5d3bef;
     font-style: italic;
     font-weight: 900;
+    font-size: 49px;
 }
 .button-outline-primary {
     background-color: rgb(255, 244, 244);
@@ -93,27 +109,28 @@ section > .inner {
 .about-left {
     height: 800px;
 }
-.About-section {
+#About-section {
     display: flex;
     justify-content: space-around;
 }
-.About-section > h1 {
+#About-section > h1 {
     margin: 0px;
 }
 
-.About-section > about-right > p {
+#About-section > about-right > p {
     text-align: justify;
     font-size: medium;
     margin: 0px;
 }
-ul>.section-list{
+ul > .section-list {
     text-decoration: underline;
     color: #5d3bef;
     font-size: larger;
     text-decoration-color: black;
     text-decoration-thickness: 2px;
 }
-
+@media (max-width: 950px) {
+}
 /* -------------HEADER-NAVIGATION BAR-------------------- */
 
 /* -------------HERO SECTION-------------------- */
