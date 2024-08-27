@@ -1,12 +1,7 @@
-/* -------------ABRI FATFACE FONT-------------------- */
-
-@import url('https://fonts.googleapis.com/css2?family=Abril+Fatface&display=swap');
-
 /* -------------POPPIN FONT-------------------- */
-
-@import url('https://fonts.googleapis.com/css?family=Poppins');
+@import url('https://fonts.googleapis.com/css?family=Poppins:wght@200..900');
 * {
-    font-family: 'Poppins', sans-serif;
+    font-family: 'poppins';
     margin: 0px;
     padding: 0px;
 }
@@ -25,7 +20,7 @@ header > .inner {
 .menus-border ul > li > a {
     text-decoration: none;
     color: black;
-    font-weight: 50;
+    /* font-weight: 50; */
     position: relative;
 }
 .menus-border ul li a::after,
@@ -47,7 +42,7 @@ header > .inner {
     padding: 10px 15px;
     margin: 0px 20px;
     border-radius: 15px;
-    font-weight: 500;
+    /* font-weight: 500; */
 }
 button {
     font-size: x-small;
@@ -71,6 +66,8 @@ button:hover {
 }
 #logo > img {
     width: 80px;
+    padding-left: 100px;
+    padding-top: 10px;
 }
 section > .inner {
     display: flex;
@@ -89,7 +86,7 @@ section > .inner {
     margin-left: 65px;
     color: #5d3bef;
     font-style: italic;
-    font-weight: 900;
+    /* font-weight: 900; */
     font-size: 49px;
 }
 .button-outline-primary {
@@ -129,12 +126,36 @@ body > * > .inner {
     font-size: medium;
     margin: 0px;
 }
-.section-list {
+.readmore a {
+    text-decoration: none;
+    color: white;
+}
+/* .section-list {
     display: flex;
     justify-content: space-evenly;
     font-size: larger;
+    list-style: none;
+    padding-top: 8px;
     text-decoration-thickness: 2px;
 }
+.section-list li a {
+    color: black;
+}
+.section-list li a::after {
+    content: '';
+    position: absolute;
+    background-color: #5d3bef;
+    width: 0%;
+    height: 0.2rem;
+    left: 0;
+    bottom: -5px;
+    transition: 0.5s;
+}
+.section-list li a:hover {
+    cursor: pointer;
+    transition: 0.2s;
+} */
+
 .projects {
     padding: 80px 0px;
     background-color: rgb(220, 209, 209);
@@ -142,8 +163,7 @@ body > * > .inner {
 .project-mainheading {
     text-align: center;
     font-size: 53px;
-    font-weight: 900;
-    padding-bottom: 50px;
+    padding-bottom: 25px;
 }
 .wrapper {
     display: flex;
@@ -155,7 +175,7 @@ body > * > .inner {
 .cards {
     display: flex;
     background-color: white;
-    padding: 50px 20px;
+    padding: 23px 20px;
     position: relative;
     border-radius: 30px;
     box-shadow: 0px 2px 20px gray;
@@ -175,8 +195,8 @@ body > * > .inner {
     color: #5d3bef;
 }
 .btns {
-    padding: 12px 40px;
-    font-size: 17px;
+    /* padding: 12px 40px; */
+    font-size: 16px;
     border: none;
 }
 .btns a {
@@ -276,10 +296,10 @@ body > * > .inner {
     padding-top: 20px;
     font-size: 35px;
     color: #5d3bef;
-    font-weight: 900;
+    /* font-weight: 900; */
 }
 .second-text {
-    font-weight: 800;
+    /* font-weight: 800; */
     color: #5d3bef;
 }
 .image {
@@ -346,7 +366,7 @@ form {
     padding-left: 10px;
     transform: translateY(-50%);
     font-size: 15px;
-    font-weight: 500;
+    /* font-weight: 500; */
     color: #fff;
     transition: 0.5s;
 }
@@ -355,7 +375,7 @@ form {
     top: -1px;
     left: 10px;
     background: #5d3bef;
-    font-weight: 500;
+    /* font-weight: 500; */
     font-size: 12px;
     padding: 5px;
 }
@@ -377,15 +397,15 @@ textarea.input {
     font-size: 16px;
     color: #5d3bef;
     cursor: pointer;
-    font-weight: 500;
+    /* font-weight: 500; */
 }
 footer {
     font-size: 16px;
-    background-color: #f5dff7;
+    background-color: whitesmoke;
     padding-top: 30px;
 }
 .container1 {
-    width: 1140px;
+    width: 100%;
     margin: auto;
     display: flex;
     padding-bottom: 15px;
@@ -394,7 +414,7 @@ footer {
 .footer {
     width: 100%;
 }
-h3 {
+.footer h3 {
     font-size: 28px;
     margin-bottom: 15px;
     text-align: center;
@@ -403,7 +423,7 @@ h3 {
     width: 33.3%;
 }
 .footer-content p {
-    width: 190px;
+    width: fit-content;
     margin: auto;
     padding: 7px;
 }
@@ -419,6 +439,10 @@ h3 {
     list-style-type: none;
     padding: 7px;
     position: relative;
+}
+.list li a {
+    color: black;
+    text-decoration: none;
 }
 .list li::before {
     content: '';
@@ -447,11 +471,11 @@ h3 {
     color: #5d3bef;
     font-size: 25px;
 }
-a {
+.footer-mediaicon lifc {
     text-decoration: none;
 }
 a:hover {
-    color: #5d3bef;
+    /* color: #5d3bef; */
 }
 .footer-mediaicon i:hover {
     color: white;
@@ -459,6 +483,7 @@ a:hover {
 .bottom-bar {
     width: 100%;
     background-color: #5d3bef;
+    color: white;
     text-align: center;
     padding: 10px 0;
 }
@@ -468,6 +493,11 @@ a:hover {
     padding: 7px;
 }
 @media (max-width: 850px) {
+    section#banner > .inner,
+    section#About-section {
+        flex-wrap: wrap-reverse;
+    }
+
     /* <!------------------------------------------CONTACT SECTION---------------------------- --> */
 
     .item {
@@ -488,7 +518,6 @@ a:hover {
 
     /* --------------Footer-------------------- */
     .footer {
-        width: fit-content;
     }
     .container1 {
         flex-direction: column;
