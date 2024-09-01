@@ -5,6 +5,9 @@
     margin: 0px;
     padding: 0px;
 }
+.topbar {
+    display: none;
+}
 header > .inner {
     display: flex;
     justify-content: space-between;
@@ -491,16 +494,50 @@ a:hover {
     padding: 7px;
 }
 @media (max-width: 850px) {
+    .topbar {
+        display: block;
+        direction: rtl;
+    }
+    .topbar i {
+        font-size: 5rem;
+    }
+    #Home-section > .inner.active {
+        opacity: 1;
+        visibility: visible;
+        transition: 1s;
+    }
+    #Home-section > .inner {
+        visibility: hidden;
+        display: grid;
+        direction: rtl;
+        transition: 1s;
+        opacity: 0;
+        position: absolute;
+        right: 0;
+        background: rgb(255 255 255 / 80%);
+        width: 100%;
+    }
+    .menus-border ul {
+        display: grid;
+    }
     section#banner > .inner,
     section#About-section {
-        display: block;
         flex-wrap: wrap-reverse;
     }
+    #right > img {
+        width: 350px;
+    }
+    /* <!-- --------------------------------PROJECT SECTION----------------------------- --> */
 
-    /* <!------------------------------------------CONTACT SECTION---------------------------- --> */
+    .wrapper {
+        flex-wrap: wrap;
+    }
+
+    /* <!-----------------------------------CONTACT SECTION----------------------------- --> */
 
     .item {
         grid-template-columns: 1fr;
+        width: 70%;
     }
     .contact {
         display: none;
@@ -520,14 +557,38 @@ a:hover {
     }
     .container1 {
         flex-direction: column;
+        align-items: center;
     }
     .footer-content {
         width: 75%;
     }
 }
 @media (max-width: 480px) {
+    .topbar i {
+        font-size: 3rem;
+        padding-right: 5px;
+    }
+    section#banner > .inner {
+        padding: 0px 40px;
+    }
+    .left {
+        font-size: medium;
+    }
+    .mainheading {
+        font-size: 40px;
+    }
+    .subheading {
+        font-size: 30px;
+    }
+    .button-primary {
+        margin: 12px 10px;
+    }
+    .button-outline-primary {
+        margin: 0px 0px 12px 9px;
+    }
     .item {
         grid-template-columns: 1fr;
+        width: 70%;
     }
     .contact {
         display: none;
