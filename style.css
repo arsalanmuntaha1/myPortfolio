@@ -82,6 +82,9 @@ section > .inner {
     /* margin-top: 60px; */
     font-size: x-large;
 }
+.left p{
+    font-size: 20px;
+}
 .subheading {
     font-size: 40px;
 }
@@ -117,6 +120,7 @@ body > * > .inner {
     display: flex;
     justify-content: space-around;
     background-color: whitesmoke;
+    border: 2px solid #ceccd4;
 }
 #About-section > h1 {
     margin: 0px;
@@ -157,9 +161,8 @@ body > * > .inner {
     transition: 0.2s;
 } */
 
-.projects {
-    padding: 80px 0px;
-    background-color: rgb(220, 209, 209);
+.project{
+  padding-bottom: 50px;
 }
 .project-mainheading {
     text-align: center;
@@ -171,7 +174,7 @@ body > * > .inner {
     justify-content: center;
     align-items: center;
     gap: 50px;
-    margin: 0px 150px;
+    margin: 0px 100px;
 }
 .cards {
     display: flex;
@@ -263,12 +266,13 @@ body > * > .inner {
     justify-content: center;
     align-items: center;
     min-height: 100vh;
+    background: whitesmoke;
+    border: 2px solid #ceccd4;
 }
 .container {
     position: relative;
     width: 100%;
     height: 90vh;
-    background: whitesmoke;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -320,6 +324,7 @@ body > * > .inner {
 }
 .social-media i {
     background-color: #f5dff7;
+    color: #5d3bef;
     padding: 5px;
     font-size: 25px;
     border-radius: 50%;
@@ -327,7 +332,7 @@ body > * > .inner {
 }
 .social-media i:hover {
     background-color: #fff;
-    color: #5d3bef;
+   
 }
 .third-text {
     font-size: 25px;
@@ -472,14 +477,23 @@ footer {
     color: #5d3bef;
     font-size: 25px;
 }
-.footer-mediaicon lifc {
+.footer-mediaicon li{
     text-decoration: none;
 }
 a:hover {
     /* color: #5d3bef; */
 }
-.footer-mediaicon i:hover {
-    color: white;
+.footer-mediaicon #linkedin:hover {
+    color: #0077B5;
+}
+.footer-mediaicon #github:hover {
+    color: #24292E;
+}
+.footer-mediaicon #facebook:hover {
+    color: #1877F2;
+}
+.footer-mediaicon #twitter:hover {
+    color: #1DA1F2;
 }
 .bottom-bar {
     width: 100%;
@@ -494,6 +508,9 @@ a:hover {
     padding: 7px;
 }
 @media (max-width: 850px) {
+    #logo{
+        display: none;
+    }
     .topbar {
         display: block;
         direction: rtl;
@@ -523,6 +540,9 @@ a:hover {
     section#banner > .inner,
     section#About-section {
         flex-wrap: wrap-reverse;
+    }
+    .about-right{
+        padding: 0px 30px
     }
     #right > img {
         width: 350px;
@@ -568,6 +588,9 @@ a:hover {
         font-size: 3rem;
         padding-right: 5px;
     }
+    #logo{
+        display: none;
+    }
     section#banner > .inner {
         padding: 0px 40px;
     }
@@ -585,6 +608,9 @@ a:hover {
     }
     .button-outline-primary {
         margin: 0px 0px 12px 9px;
+    }
+    .about-right{
+        padding: 0px 30px
     }
     .item {
         grid-template-columns: 1fr;
