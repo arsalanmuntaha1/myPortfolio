@@ -8,6 +8,9 @@
 .topbar {
     display: none;
 }
+.mobileviewlogo {
+    display: none;
+}
 header > .inner {
     display: flex;
     justify-content: space-between;
@@ -67,7 +70,7 @@ button:hover {
     cursor: pointer;
     transition: 0.2s;
 }
-#logo > img {
+.inner > #logo > img {
     width: 80px;
     padding-left: 100px;
     padding-top: 10px;
@@ -508,12 +511,20 @@ a:hover {
     padding: 7px;
 }
 @media (max-width: 850px) {
-    #logo {
+    .mobileviewlogo {
+        display: block;
+    }
+    .mobileviewlogo > img {
+        width: 80px;
+    }
+    .inner > #logo {
         display: none;
     }
     .topbar {
-        display: block;
         direction: rtl;
+        display: flex;
+        justify-content: space-between;
+        padding: 12px 0 0 15px;
     }
     .topbar i {
         font-size: 5rem;
@@ -584,12 +595,24 @@ a:hover {
     }
 }
 @media (max-width: 480px) {
+    .mobileviewlogo {
+        display: block;
+    }
+    .mobileviewlogo > img {
+        width: 70px;
+    }
+    .inner > #logo {
+        display: none;
+    }
+    .topbar {
+        direction: rtl;
+        /* display: flex; */
+        /* justify-content: space-between; */
+        padding: 12px 0 0 15px;
+    }
     .topbar i {
         font-size: 3rem;
         padding-right: 5px;
-    }
-    #logo {
-        display: none;
     }
     section#banner > .inner {
         padding: 0px 40px;
