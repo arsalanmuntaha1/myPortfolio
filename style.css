@@ -273,6 +273,8 @@ body > * > .inner {
     min-height: 100vh;
     background: whitesmoke;
     border: 2px solid #ceccd4;
+    border-left: 0;
+    border-right: 0;
 }
 .container {
     position: relative;
