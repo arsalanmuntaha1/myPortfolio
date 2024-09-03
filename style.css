@@ -121,6 +121,8 @@ body > * > .inner {
     justify-content: space-around;
     background-color: whitesmoke;
     border: 2px solid #ceccd4;
+    border-left: 0;
+    border-right: 0;
 }
 #About-section > h1 {
     margin: 0px;
@@ -200,7 +202,7 @@ body > * > .inner {
 }
 .btns {
     /* padding: 12px 40px; */
-    font-size: 15px;
+    font-size: 13px;
     border: none;
 }
 .btns a {
