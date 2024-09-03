@@ -562,6 +562,11 @@ a:hover {
 
     .wrapper {
         flex-wrap: wrap;
+        gap: 30px;
+        margin: 0px 10px;
+    }
+    .cards {
+        width: 50%;
     }
 
     /* <!-----------------------------------CONTACT SECTION----------------------------- --> */
@@ -635,9 +640,20 @@ a:hover {
     .about-right {
         padding: 0px 30px;
     }
+    /* <!-- --------------------------------PROJECT SECTION----------------------------- --> */
+
+    .wrapper {
+        flex-wrap: wrap;
+        gap: 30px;
+        margin: 0px 10px;
+    }
+    .cards {
+        width: 80%;
+    }
+
     .item {
         grid-template-columns: 1fr;
-        width: 70%;
+        width: 90%;
     }
     .contact {
         display: none;
