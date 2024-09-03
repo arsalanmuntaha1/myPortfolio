@@ -82,7 +82,7 @@ section > .inner {
     /* margin-top: 60px; */
     font-size: x-large;
 }
-.left p{
+.left p {
     font-size: 20px;
 }
 .subheading {
@@ -161,8 +161,8 @@ body > * > .inner {
     transition: 0.2s;
 } */
 
-.project{
-  padding-bottom: 50px;
+.project {
+    padding-bottom: 50px;
 }
 .project-mainheading {
     text-align: center;
@@ -183,6 +183,7 @@ body > * > .inner {
     position: relative;
     border-radius: 30px;
     box-shadow: 0px 2px 20px gray;
+    width: 33%;
 }
 .content {
     display: flex;
@@ -191,7 +192,6 @@ body > * > .inner {
     align-items: center;
     gap: 20px;
     margin-top: 300px;
-    width: inherit;
 }
 .content p {
     text-align: center;
@@ -323,16 +323,17 @@ body > * > .inner {
     margin-top: 10px;
 }
 .social-media i {
-    background-color: #f5dff7;
-    color: #5d3bef;
+    background-color: #5d3bef;
+    color: white;
     padding: 5px;
     font-size: 25px;
     border-radius: 50%;
     transition: 0.3s;
+    border: 1px solid #5d3bef;
 }
 .social-media i:hover {
-    background-color: #fff;
-   
+    color: #5d3bef;
+    background: white;
 }
 .third-text {
     font-size: 25px;
@@ -407,7 +408,7 @@ textarea.input {
 }
 footer {
     font-size: 16px;
-    background-color: #d6b9de;
+    background-color: whitesmoke;
     padding-top: 30px;
 }
 .container1 {
@@ -474,26 +475,23 @@ footer {
     padding: 5px;
 }
 .footer-mediaicon i {
-    color: #5d3bef;
+    color: white;
+    background: #5d3bef;
+    padding: 4px;
+    border-radius: 50%;
     font-size: 25px;
+    transition: 0.3s;
+    border: 1px solid #5d3bef;
 }
-.footer-mediaicon li{
+.footer-mediaicon li {
     text-decoration: none;
 }
 a:hover {
     /* color: #5d3bef; */
 }
-.footer-mediaicon #linkedin:hover {
-    color: #0077B5;
-}
-.footer-mediaicon #github:hover {
-    color: #24292E;
-}
-.footer-mediaicon #facebook:hover {
-    color: #1877F2;
-}
-.footer-mediaicon #twitter:hover {
-    color: #1DA1F2;
+.footer-mediaicon i:hover {
+    color: #5d3bef;
+    background: white;
 }
 .bottom-bar {
     width: 100%;
@@ -508,7 +506,7 @@ a:hover {
     padding: 7px;
 }
 @media (max-width: 850px) {
-    #logo{
+    #logo {
         display: none;
     }
     .topbar {
@@ -541,8 +539,8 @@ a:hover {
     section#About-section {
         flex-wrap: wrap-reverse;
     }
-    .about-right{
-        padding: 0px 30px
+    .about-right {
+        padding: 0px 30px;
     }
     #right > img {
         width: 350px;
@@ -588,7 +586,7 @@ a:hover {
         font-size: 3rem;
         padding-right: 5px;
     }
-    #logo{
+    #logo {
         display: none;
     }
     section#banner > .inner {
@@ -609,8 +607,8 @@ a:hover {
     .button-outline-primary {
         margin: 0px 0px 12px 9px;
     }
-    .about-right{
-        padding: 0px 30px
+    .about-right {
+        padding: 0px 30px;
     }
     .item {
         grid-template-columns: 1fr;
